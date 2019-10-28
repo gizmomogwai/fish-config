@@ -4,4 +4,7 @@ if not functions -q fisher
     fish -c fisher
 end
 
+set -x PATH ~/.fzf/bin $PATH
+set -x PATH ~/.magit $PATH
+
 rvm ruby-2.6.3@global
