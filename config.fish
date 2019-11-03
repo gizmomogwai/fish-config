@@ -29,7 +29,8 @@ switch (uname)
   case Darwin
     set -x ck_os osx
     set -x HOMEBREW_EDITOR emacs
-    
+    set -x PATH ~/bin/repo/google $PATH    
+
   case '*'
     echo "unknown os"
 end
@@ -39,3 +40,4 @@ set -x PATH ~/.magit $PATH
 set -x PATH ~/bin/$ck_os $PATH
 
 rvm ruby-2.6.3@global
+
